@@ -1,0 +1,45 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@layer base {
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  html { scroll-behavior: smooth; }
+  body {
+    font-family: 'Lora', serif;
+    background-color: #C2A060;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.75' numOctaves='4' stitchTiles='stitch'/%3E%3CfeColorMatrix type='saturate' values='0'/%3E%3C/filter%3E%3Crect width='300' height='300' filter='url(%23n)' opacity='0.06'/%3E%3C/svg%3E");
+  }
+  ::-webkit-scrollbar { width: 6px; }
+  ::-webkit-scrollbar-track { background: #C2A060; }
+  ::-webkit-scrollbar-thumb { background: #3D2B1F; border-radius: 3px; }
+}
+
+@layer utilities {
+  .clip-banner {
+    clip-path: polygon(0% 50%, 16px 0%, calc(100% - 16px) 0%, 100% 50%, calc(100% - 16px) 100%, 16px 100%);
+  }
+  .dots-line {
+    flex: 1;
+    min-width: 20px;
+    border-bottom: 2px dotted #5C3D2A;
+    opacity: 0.4;
+    align-self: flex-end;
+    margin-bottom: 4px;
+  }
+  .stripe-top {
+    background: repeating-linear-gradient(
+      90deg,
+      #B8922A 0px, #B8922A 8px,
+      #3D2B1F 8px, #3D2B1F 12px
+    );
+  }
+  .hatch-pattern {
+    background-image: repeating-linear-gradient(
+      45deg,
+      transparent, transparent 20px,
+      rgba(212,168,67,0.06) 20px, rgba(212,168,67,0.06) 40px
+    );
+  }
+}
