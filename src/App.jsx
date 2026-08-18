@@ -6,7 +6,7 @@ import DetailView from './DetailView';
 import ComingSoon from './ComingSoon';
 
 // ─── Toggle this to switch what users see ───────────────────────────────────
-const SHOW_MENU = true; // false = coming soon page | true = full menu
+const SHOW_MENU = false; // false = coming soon page | true = full menu
 // ────────────────────────────────────────────────────────────────────────────
 
 export default function App() {
