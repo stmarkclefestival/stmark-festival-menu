@@ -26,7 +26,7 @@ export const menu = [
         name: "Fruit Smoothie",
         price: 7.0,
         desc: "Bananas, mangos, strawberries, honey",
-        img: "",
+        img: "/stmark-festival-menu/images/MB smoothie2.jpg",
       },
       {
         name: "Sugar Cane Fresh Juice",
