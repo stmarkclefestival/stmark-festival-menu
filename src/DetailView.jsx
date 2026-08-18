@@ -29,7 +29,11 @@ export default function DetailView({ item, categoryName, categoryId }) {
         <img
           src={item.img}
           alt={item.name}
-          className="w-full h-[240px] object-cover"
+          className={`w-full h-[240px] ${
+            item.imgFit === "contain"
+              ? "object-contain bg-parchment-light"
+              : "object-cover"
+          }`}
         />
       )}
 
