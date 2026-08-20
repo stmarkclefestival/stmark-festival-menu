@@ -30,6 +30,16 @@ export default function MenuItem({ item, onClick }) {
               <circle cx="12" cy="13" r="4" />
             </svg>
           )}
+          {item.tags?.map((tag) => (
+            <span
+              key={tag}
+              className="inline-block bg-tag-red text-white font-body font-bold text-[9px]
+                         uppercase tracking-wider px-[6px] py-[2px] rounded-[3px] ml-1.5
+                         align-middle"
+            >
+              {tag}
+            </span>
+          ))}
         </span>
         {item.desc && (
           <p className="font-body italic text-[12px] text-mid-brown mt-0.5 leading-snug">

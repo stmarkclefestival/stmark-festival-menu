@@ -19,6 +19,7 @@ export default {
         'gold-light': '#D4A843',
         'text-dark':  '#2A1A0E',
         'text-body':  '#3D2B1F',
+        'tag-red':    '#B3251E',
       },
       fontFamily: {
         display: ['Cinzel', 'serif'],

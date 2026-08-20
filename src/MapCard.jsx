@@ -18,7 +18,7 @@ export default function MapCard({ onClick }) {
 
       <div className="relative">
         <img
-          src="/stmark-festival-menu/images/Festival Map 2026.png"
+          src="/stmark-festival-menu/images/Mobile Map 2026.png"
           alt="Festival grounds map"
           className="w-full h-[130px] object-cover object-top"
         />
